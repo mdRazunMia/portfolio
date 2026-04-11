@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ProjectType {
+  plugin
+  enterprise
+  personal
+}
+
+model Profile {
+  id        Int      @id @default(autoincrement())
+  name      String
+  title     String
+  summary   String
+  location  String?
+  phone     String?
+  email     String
+  github    String?
+  linkedin  String?
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Project {
+  id           Int         @id @default(autoincrement())
+  title        String
+  description  String
+  type         ProjectType
+  technologies String[]
+  liveUrl      String?
+  githubUrl    String?
+  image        String?
+  featured     Boolean     @default(false)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+}
+
+model Experience {
+  id           Int      @id @default(autoincrement())
+  company      String
+  position     String
+  startDate    DateTime
+  endDate      DateTime?
+  isCurrent    Boolean  @default(false)
+  description  String
+  achievements String[]
+  technologies String[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
