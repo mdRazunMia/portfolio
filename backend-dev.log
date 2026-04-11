@@ -39,3 +39,5 @@
 [32m[Nest] 5916  - [39m04/11/2026, 9:01:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/experience/:id, PUT} route[39m[38;5;3m +86ms[39m
 [32m[Nest] 5916  - [39m04/11/2026, 9:01:02 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/experience/:id, DELETE} route[39m[38;5;3m +21ms[39m
 [32m[Nest] 5916  - [39m04/11/2026, 9:01:02 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +70ms[39m
+[2J[3J[H[[90m9:32:59 AM[0m] File change detected. Starting incremental compilation...
+

@@ -12,3 +12,56 @@
    - Environments: .env.local
 
  ✓ Starting...
+ ✓ Ready in 28.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 74s (601 modules)
+ GET / 200 in 37238ms
+ GET / 200 in 134ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 1165ms (592 modules)
+ GET /about 200 in 1465ms
+ ○ Compiling /experience ...
+ ✓ Compiled /experience in 710ms (595 modules)
+ GET /experience 200 in 957ms
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 667ms (600 modules)
+ GET /projects 200 in 1027ms
+ GET /projects?type=plugin 200 in 281ms
+ GET /projects?type=enterprise 200 in 91ms
+ GET /projects?type=personal 200 in 95ms
+ GET /projects 200 in 47ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 693ms (603 modules)
+ GET /contact 200 in 809ms
+ ○ Compiling /admin/login ...
+ ✓ Compiled /admin/login in 7.6s (629 modules)
+ GET /admin/login 200 in 8407ms
+ ○ Compiling /admin/dashboard ...
+ ✓ Compiled /admin/dashboard in 736ms (630 modules)
+ GET /admin/dashboard 200 in 1270ms
+ GET /admin/dashboard 200 in 214ms
+ ○ Compiling /admin/profile ...
+ ✓ Compiled /admin/profile in 700ms (638 modules)
+ GET /admin/profile 200 in 869ms
+ GET /admin/profile 200 in 490ms
+ GET / 200 in 270ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 802ms (409 modules)
+ GET /about 200 in 4304ms
+ GET /about 200 in 89ms
+ ○ Compiling /experience ...
+ ✓ Compiled /experience in 908ms (412 modules)
+ GET /experience 200 in 2104ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 766ms (415 modules)
+ GET /contact 200 in 1222ms
+ GET / 200 in 132ms
+ GET / 200 in 158ms
+ GET /about 200 in 110ms
+ GET /experience 200 in 128ms
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 814ms (411 modules)
+ GET /projects 200 in 1120ms
+ GET /contact 200 in 117ms
+ GET / 200 in 87ms
+ GET / 200 in 190ms
