@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: portfolio-backend
+    env: node
+    region: oregon
+    buildCommand: cd backend && npm install && npx prisma generate && npm run build
+    startCommand: node backend/dist/main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: CLIENT_URL
+        value: https://your-frontend.onrender.com
+    disk:
+      enabled: false
+    autoDeploy: true
+
+  - type: web
+    name: portfolio-frontend
+    env: static
+    region: oregon
+    buildCommand: cd frontend && npm install && npm run build
+    publishDir: frontend/out
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://portfolio-backend.onrender.com
+    autoDeploy: true
+
+databases:
+  - name: portfolio-db
+    plan: free
+    region: oregon
